@@ -11,7 +11,7 @@ defmodule Http.Application do
       # Starts a worker by calling: Http.Worker.start_link(arg)
       # {Http.Worker, arg},
       # {Http, port: 8080}
-      {Http.PlugAdapter, plug: CurrentTime, port: 8080}
+      {Http.PlugAdapter, plug: Plug.Octopus, port: 8080}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
